@@ -1,0 +1,17 @@
+/* components/SearchInput.wxss */
+.search {
+  height: 50rpx;
+}
+.search-input {
+  width: 60%;
+  height: 98%;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  background-color: #eee;
+  border-radius: 15rpx;
+  margin-top: 10rpx;
+}
+.search-input icon,
+.search-input input {
+ float: left;
+}

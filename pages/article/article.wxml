@@ -1,0 +1,41 @@
+<!--pages/article/article.wxml-->
+<view>
+  <view class="header">
+  <SearchInput></SearchInput>
+  <view class="filter">
+  <view class="checkbox">
+    <view class="checkItem,{{index1 === activeItemIndex?'active':''}}"
+       wx:for="{{sentimentList}}"
+       wx:key="id"
+       data-index="{{index1}}"
+       wx:for-item="item1"
+       wx:for-index="index1"
+       catchtap="changeSentiment"
+       >
+      {{item1.value}}
+    </view>
+  </view>
+  </view>
+</view>
+<view class="content">
+   <view class="item"
+       wx:for="{{articleList}}"
+       wx:key="id"
+       data-index="{{index}}"
+       wx:for-item="item"
+       wx:for-index="index" 
+   >
+     <view class="sentiment">
+      <view class="negative" wx:if="{{item.sentimentValue == 'negative'}}">负面</view>
+      <view class="neutrual" wx:if="{{item.sentimentValue == 'neutrual'}}">中性</view>
+      <view class="positive" wx:if="{{item.sentimentValue == 'positive'}}">正面</view>
+     </view>
+     <view class="item-content">
+       <view class="title">{{item.title}}</view>
+       <view class="summary">{{item.summary}}</view>
+     </view>
+   </view>
+</view>
+</view>
+
+

@@ -1,0 +1,77 @@
+/* pages/article/article.wxss */
+.header {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 5px;
+}
+.checkbox {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid #008cff;
+  border-right: 0px;
+  border-radius: 10rpx; 
+}
+.checkbox view {
+  flex: 1;
+}
+.checkItem {
+  border-right: 1px solid rgb(0,121,254); 
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  color:rgb(0,121,254) ;
+}
+.active {
+  color: #fff;
+  background-color:rgb(0,121,254) ;
+}
+.item {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  border-bottom:1px solid #eee;
+  padding: 10px;
+}
+.sentiment {
+  width: 40px;
+  height: 40rpx;
+  font-size: 14px;
+  line-height: 40rpx;
+  color: #fff;
+  text-align: center;
+  margin-right: 10px;
+}
+.sentiment .negative {
+  background-color:rgb(255,102,102);
+}
+.sentiment .neutrual {
+  background-color:#fff566;
+}
+.sentiment .positive {
+  background-color:rgb(0,121,254);
+}
+.item-content {
+  width: 80%;
+}
+.item-content .title {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(102,102,102);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-content .summary {
+  font-size: 14px;
+  color: rgb(102,102,102);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+
+}

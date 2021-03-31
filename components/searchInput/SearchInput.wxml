@@ -1,0 +1,9 @@
+<!--components/SearchInput.wxml-->
+<view class="search">
+    <slot class="search-left" name="left"></slot>
+    <view class="search-input">
+      <icon class="icon-box-search" type="search"></icon>
+      <input type="text" placeholder="搜索内容"></input>
+    </view>
+    <slot class="search-right" name="right"></slot>
+  </view>

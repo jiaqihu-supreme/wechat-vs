@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/article/article",
+    "pages/weibo/weibo",
+    "pages/addArticle/addArticle",
+    "components/searchInput/SearchInput"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "vs",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "fontSize": "16rpx",
+    "color": "#999",
+    "selectedColor": "#666",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/home.png",
+        "selectedIconPath": "img/home1.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "文章",
+        "iconPath": "img/article.png",
+        "selectedIconPath": "img/article1.png"
+      },
+      {
+        "pagePath": "pages/weibo/weibo",
+        "text": "微博",
+        "iconPath": "img/weibo.png",
+        "selectedIconPath": "img/weibo1.png"
+      },
+      {
+        "pagePath": "pages/addArticle/addArticle",
+        "text": "添加文章",
+        "iconPath": "img/add.png",
+        "selectedIconPath": "img/add1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
