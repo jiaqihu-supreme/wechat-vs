@@ -18,14 +18,22 @@
   </view>
 </view>
 <view class="content">
-   <view class="item"
+   <scroll-view class="item" enable-flex="true"
+       scroll-left="-160px"
+       enhanced="true"
+       scroll-x="true"
+       bindscroll="scroll"
+       binddragstart="touchStart"
+       binddragend="touchEnd"
        wx:for="{{articleList}}"
        wx:key="id"
        data-index="{{index}}"
        wx:for-item="item"
        wx:for-index="index" 
    >
-     <view class="sentiment">
+  
+   <view class="info">
+    <view class="sentiment">
       <view class="negative" wx:if="{{item.sentimentValue == 'negative'}}">负面</view>
       <view class="neutrual" wx:if="{{item.sentimentValue == 'neutrual'}}">中性</view>
       <view class="positive" wx:if="{{item.sentimentValue == 'positive'}}">正面</view>
@@ -35,6 +43,16 @@
        <view class="summary">{{item.summary}}</view>
      </view>
    </view>
+   <view class="operate-right">
+     <view class="operate set-positive">标为正面</view>
+     <view class="operate set-negative">标为负面</view>
+   </view>
+   <!-- <view class="operate-left">
+    <view class="operate set-positive">删除</view>
+    <view class="operate set-negative">预警</view>
+   </view> -->
+   
+   </scroll-view>
 </view>
 </view>
 

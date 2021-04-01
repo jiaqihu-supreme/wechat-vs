@@ -29,17 +29,22 @@
   background-color:rgb(0,121,254) ;
 }
 .item {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
+  width: 100%;
   border-bottom:1px solid #eee;
-  padding: 10px;
+  white-space: nowrap;
+  position: relative;
+}
+.info {
+  display: inline-block;
+  width: 100%;
+  margin: 5px;
 }
 .sentiment {
+  vertical-align: top;
+  margin-top: 10px;
   width: 40px;
-  height: 40rpx;
   font-size: 14px;
-  line-height: 40rpx;
+  display: inline-block;
   color: #fff;
   text-align: center;
   margin-right: 10px;
@@ -54,7 +59,37 @@
   background-color:rgb(0,121,254);
 }
 .item-content {
-  width: 80%;
+  width: calc(100% - 60px);
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+}
+.operate-right{
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(0,121,254);
+  position: absolute;
+  height: calc(100% - 19px);
+  vertical-align: top;
+  left: 100%;
+  color: #fff;
+}
+.operate-left {
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(0,121,254);
+  position: absolute;
+  height: calc(100% - 19px);
+  /* left: -160px; */
+  color: #fff;
+}
+.operate {
+  width: 80px;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .item-content .title {
   font-size: 14px;
@@ -67,11 +102,11 @@
 .item-content .summary {
   font-size: 14px;
   color: rgb(102,102,102);
-  overflow: hidden;
+  /* overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  text-align: justify;
+  text-align: justify; */
 
 }

@@ -30,6 +30,15 @@ Page({
     let res = await request({url:'/wechat/getArticle',data:{limit:20,offset:0,wechatId:'oqSEA5B74IJklsmJf00Ff4wHUxKg',groupId:3}});
     this.setData({articleList:res.data.list})
   },
+  scroll(e){
+    console.log(e);
+  },
+  touchStart(e){
+    console.log(e)
+  },
+  touchEnd(e){
+    console.log(e)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
